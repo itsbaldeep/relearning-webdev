@@ -1,0 +1,202 @@
+<!-- official tag for declaring that this document is HTML5 -->
+<!DOCTYPE html>
+
+<!-- html tag is the root element that contains head and body elements -->
+<html>
+    <!-- head tag contains information about the document -->
+    <head>
+        <!-- title tag defines the title of the webpage -->
+        <title>Basic HTML</title>
+
+        <!-- meta tags define the metadata of the webpage -->
+        <meta name="keywords" content="HTML, CSS, XML, JavaScript" />
+        <meta name="description" content="Web Page Designing Issues" />
+
+        <!-- the line below will refresh the page every 60 seconds -->
+        <!-- <meta http-equiv="refresh" content="60">  -->
+    </head>
+
+    <!-- body tag contains the body of the webpage to be displayed in the browser -->
+    <body>
+        <!-- headings -->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <!-- paragraphs -->
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptatum!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptatum!</p>
+
+        <!-- br tag is for adding a line break -->
+        <br />
+
+        <!-- strong tag and emphasize tag -->
+        <strong>Bold text</strong> <br />
+        <em>Italic text</em> <br />
+
+        <!-- anchor tag -->
+        <!-- target attribute with _blank value will open the link in a new tab -->
+        <a href="https://www.google.com" target="_blank">Link to Google</a> <br />
+
+        <!-- unordered list tag (adds bullet points) -->
+        <ul>
+            <!-- list item tag -->
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ul>
+
+        <!-- unordered list tag (adds number points) -->
+        <ol>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ol>
+
+        <!-- table tag -->
+        <table border="1">
+            <!-- table head (contains titles and headings) -->
+            <thead>
+                <!-- table row tag -->
+                <tr>
+                    <!-- table heading tags -->
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+
+            <!-- table foot tag (shows up at the bottom) -->
+            <tfoot>
+                <tr>
+                    <td colspan="3">Table Footer</td>
+                </tr>
+            </tfoot>
+
+            <!-- table body (contains the main data) -->
+            <tbody>
+                <tr>
+                    <!-- table data tags -->
+                    <td>Baldeep Singh</td>
+                    <td>itsbaldeep@gmail.com</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <!-- table data tags -->
+                    <td>Baldeep Singh</td>
+                    <td>itsbaldeep@gmail.com</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <!-- table data tags -->
+                    <td>Baldeep Singh</td>
+                    <td>itsbaldeep@gmail.com</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br />
+        <!-- hr tag adds a visible line to divide content -->
+        <hr />
+        <br />
+
+        <!-- form tag, action defines the file that will process data and method attritube defined the method -->
+        <form action="process.php" method="GET">
+            <div>
+                <!-- label tag and input tag -->
+                <label>First Name</label>
+                <!-- type attribute defines the type of input that is supposed to be given -->
+                <!-- name attribute is used to identify the value of the input -->
+                <input type="text" name="firstName" />
+            </div>
+            <br />
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName" />
+            </div>
+            <br />
+            <div>
+                <label>Password</label>
+                <!-- maxlength attribute will limit the length of the input -->
+                <input type="password" name="lastName" maxlength="8" />
+            </div>
+            <br />
+            <div>
+                <label>Email</label>
+                <!-- placeholder attribute adds a faded value to the input area -->
+                <input type="email" name="email" placeholder="name@domain.com" />
+            </div>
+            <br />
+            <div>
+                <label>Age</label>
+                <!-- value attribute adds a default value to the input area -->
+                <input type="number" name="age" value="10" />
+            </div>
+            <br />
+            <div>
+                <label>Birthday</label>
+                <input type="date" name="bday" />
+            </div>
+            <br />
+            <div>
+                <label>Message</label>
+                <!-- textarea is used to get large amount of textual input -->
+                <textarea name="message" rows="5" cols="20"></textarea>
+            </div>
+            <br />
+            <div>
+                <label>Gender</label>
+                <!-- select tag is used to get an input based on fixed options -->
+                <select name="gender">
+                    <!-- option tags -->
+                    <!-- value attribute is used to identify the input -->
+                    <optgroup label="Binary">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </optgroup>
+                    <optgroup label="Non Binary">
+                        <option value="other">Other</option>
+                    </optgroup>
+                </select>
+            </div>
+            <br />
+            <!-- submit button -->
+            <input type="submit" name="submit" value="Submit" />
+        </form>
+
+        <br />
+        <hr />
+        <br />
+
+        <!-- fieldset and legend tags -->
+        <fieldset>
+            <legend><b>Subscribe to our newsletter</b></legend>
+            <label>Email</label>
+            <input type="email" />
+        </fieldset>
+        <br />
+
+        <!-- button tags -->
+        <button>Click Me</button>
+
+        <br />
+        <!-- image tag -->
+        <!-- src attribute defines the source of the image -->
+        <!-- alt attribute defines the text to appear in case the image is not found -->
+        <img src="./images/sample.jpg" alt="Image not found" width="200px" />
+
+        <br />
+        <!-- blockquote tag -->
+        <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, velit.
+        </blockquote>
+
+        <!-- abbreviation and cite tags -->
+        <abbr title="World Wide Web">WWW</abbr>
+        <cite>Hypertext Markup Language</cite>
+    </body>
+</html>
