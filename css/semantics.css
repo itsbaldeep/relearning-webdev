@@ -1,0 +1,102 @@
+body {
+    background-color: #eee;
+    color: #333;
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.6em;
+    font-size: 16px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#header {
+    background-color: teal;
+    color: white;
+    text-align: center;
+}
+
+#nav {
+    background-color: #00a3a3;
+}
+
+#nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+#nav li {
+    display: inline;
+}
+
+#nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+#nav a:hover {
+    color: #faa;
+}
+
+#showcase {
+    min-height: 200px;
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("./images/showcase.jpg");
+}
+
+#showcase h1 {
+    color: #eee;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    line-height: 1.6em;
+    padding-top: 10px;
+}
+
+#main {
+    float: left;
+    width: 66%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#main h1 {
+    text-align: center;
+}
+
+#sidebar {
+    float: right;
+    width: 34%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ddd;
+}
+
+#footer {
+    background: teal;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+/* media query for responsiveness */
+
+@media (max-width: 600px) {
+    #main {
+        width: 100%;
+        float: none;
+    }
+    #sidebar {
+        width: 100%;
+        float: none;
+    }
+}

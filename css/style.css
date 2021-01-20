@@ -1,0 +1,245 @@
+h3 {
+    /* changing text color using color name */
+    color: yellow;
+}
+
+/* reset */
+/* 
+* {
+    margin: 0;
+    padding: 0;
+} 
+*/
+
+body {
+    /* changing background color using hexadecimal value*/
+    background-color: #eeeeee;
+    /* changing text color using rgb value*/
+    color: rgb(58, 58, 58);
+
+    /* changing font style */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px; /* can be any px,em,rem, defines size, default 1em/16px */
+    font-weight: normal; /* can be 100-900, defines thickness, default 400 */
+
+    /* same as above */
+    /* font: normal 16px Arial, Helvetica, sans-serif; */
+
+    /* changing line height */
+    line-height: 1.6em;
+}
+
+/* selecting classes */
+
+.container {
+    /* setting width to 80% of the page */
+    width: 80%;
+    /* setting 0 margin on top/bottom and auto margin on left/right sides */
+    margin: 0 auto;
+}
+
+.box {
+    background-color: gray;
+    color: white;
+
+    /* adding border, size 6px, color orange, style solid */
+    border-bottom-width: 6px;
+    border-bottom-color: orange;
+    border-bottom-style: solid;
+
+    /* same as above */
+    /* border-bottom: 6px orange solid; */
+
+    /* adding padding to all sides*/
+    padding: 10px;
+
+    /* adding margin */
+    margin-top: 10px;
+}
+
+.box h1 {
+    font-family: Tahoma;
+    /* to add certain changes */
+    text-decoration: underline;
+    /* to make it uppercase */
+    text-transform: uppercase;
+}
+
+/* changing styles for every anchor tag */
+a {
+    /* remove the underline */
+    text-decoration: none;
+    /* remove the color */
+    color: black;
+}
+
+/* on hovering at anchor */
+a:hover {
+    color: grey;
+}
+
+/* on clicking */
+a:active {
+    color: green;
+}
+
+/* if already clicked */
+a:visited {
+    color: white;
+}
+
+/* styling categories */
+.categories {
+    border: 1px black solid;
+    padding: 10px;
+    margin-top: 10px;
+
+    /* to make rounded rectangle */
+    border-radius: 10px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    /* lists have padding on left side by default */
+    padding: 0;
+    /* list style defines the character that comes before every list item */
+    list-style: none;
+}
+
+.categories li {
+    padding-bottom: 4px;
+    border-bottom: 1px dotted black;
+}
+
+/* styling form */
+.form {
+    padding: 20px;
+    border: 1px dashed gray;
+    margin-top: 20px;
+}
+
+.form h1 {
+    text-align: center;
+}
+
+.form .form-group {
+    padding-bottom: 15px;
+}
+
+.form label {
+    display: block;
+}
+
+/* selecting only inputs with type as text as well as textarea */
+.form input[type="text"],
+.form textarea {
+    padding: 8px;
+    width: 96%;
+}
+
+.button {
+    background-color: #666;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* styling 3 blocks */
+.clr {
+    clear: both;
+}
+.block {
+    margin-top: 20px;
+    float: left;
+    width: 33.3%;
+    border: 1px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* styling main and side */
+
+#main {
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+}
+#side {
+    float: right;
+    width: 30%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Positioning */
+/* parent element always has a relative position */
+/* all child elements must have absolute position */
+.position-box {
+    width: 100%;
+    height: 500px;
+    border: 3px solid black;
+    margin-top: 20px;
+    position: relative;
+}
+
+.one,
+.two {
+    font-size: 40px;
+}
+
+.one {
+    position: absolute;
+    top: 400px;
+    left: 20%;
+}
+
+.two {
+    position: absolute;
+    bottom: 100px;
+    right: 50%;
+}
+
+/* fixed button */
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* image box */
+.image-box {
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+    margin-top: 10px;
+    background-image: url("./images/image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* pseudo classes */
+.pseudo li:first-child {
+    color: red;
+}
+
+.pseudo li:nth-child(4) {
+    color: blue;
+}
+
+.pseudo li:last-child {
+    color: green;
+}
+
+.pseudo li:nth-child(even) {
+    background: gray;
+}
