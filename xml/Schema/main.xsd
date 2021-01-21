@@ -7,13 +7,15 @@ xmlns="http://www.w3schools.com"
 elementFormDefault="qualified">
 
     <!-- defining the root element testType -->
-    <xs:complexType name ="testType">
-        <xs:sequence>
-            <!-- root element will contain a node element of type nodeType -->
-            <xs:element name="node" type="tns:nodeType" />
-        </xs:sequence>
-    </xs:complexType>
-
+    <xs:element name="test">
+        <xs:complexType name ="testType">
+            <xs:sequence>
+                <!-- root element will contain a node element of type nodeType -->
+                <xs:element name="node" type="tns:nodeType" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
     <!-- defining the nodeType -->
     <xs:complexType name ="nodeType">
         <xs:sequence>
