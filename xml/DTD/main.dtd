@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- defining element test which will contain node -->
+<!-- the + means that it can contain multiple node elements -->
+<!ELEMENT test (node+)>
+
+<!-- defining element node which will contain subnode -->
+<!ELEMENT node (subnode)>
+
+<!-- subnode will contain Parsed Character Data -->
+<!ELEMENT subnode (#PCDATA)>
+
+<!-- attribute definition for node -->
+<!ATTLIST node attr ID #REQUIRED>
+
+<!-- lang attibute can have these following values -->
+<!ATTLIST subnode lang (Java|C|C++|Python|Javascript) "Java">
+<!-- Java is the default value here in case it is ommitted -->

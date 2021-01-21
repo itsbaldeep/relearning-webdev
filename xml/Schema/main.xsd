@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- starting XML Schema declaration -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.w3schools.com"
+xmlns="http://www.w3schools.com"
+elementFormDefault="qualified">
+
+    <!-- defining the root element testType -->
+    <xs:complexType name ="testType">
+        <xs:sequence>
+            <!-- root element will contain a node element of type nodeType -->
+            <xs:element name="node" type="tns:nodeType" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- defining the nodeType -->
+    <xs:complexType name ="nodeType">
+        <xs:sequence>
+            <!-- each node will contain subnode of type string -->
+            <xs:element name="subnode" type="string" />
+        </xs:sequence>
+        <!-- defining the attribute for node element -->
+        <xs:attribute name="attr" type="ID" use="required"></xs:attribute>
+    </xs:complexType>
+
+<!-- ending XML Schema declaration at the end -->
+</xs:schema>

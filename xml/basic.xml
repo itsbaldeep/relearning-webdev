@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- the first line should always have XML declaration -->
+
+<!-- every XML file must have one root element -->
+<root-element>
+
+    <!-- every element should contain a starting and ending tag -->
+    <!-- id is an attribute given to node element -->
+    <node id="N1">
+        <subnode>Data</subnode>
+    </node>
+
+    <!-- we can use same element name more than once -->
+    <node id="N2">
+        <subnode>Data</subnode>
+    </node>
+    <node id="N3">
+        <subnode>Data</subnode>
+    </node>
+
+</root-element>
+<!-- XML ends when root element ends -->

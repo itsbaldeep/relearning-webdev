@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- the schema is referred like this -->
+<test xmlns="http://www.w3schools.com"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.w3schools.com main.xsd">
+	<node attr="1">
+        <subnode>abc</subnode>
+    </node>
+	<node attr="2">
+        <subnode>abc</subnode>
+    </node>
+</test>
