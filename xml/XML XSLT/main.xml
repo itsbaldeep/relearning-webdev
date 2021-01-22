@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- xsl files are linked using this statement -->
+<?xml-stylesheet type="text/xsl" href="transform.xsl"?>
+
+<test>
+    <heading>Heading</heading>
+    <description>Lorem ipsum dolor sit</description>
+</test>

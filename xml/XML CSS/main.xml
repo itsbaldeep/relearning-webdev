@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!-- following line is used to link the external stylesheet -->
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<test>
+    <text>Hello World!</text>
+</test>

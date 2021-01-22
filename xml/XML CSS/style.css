@@ -1,0 +1,13 @@
+/* selectors are based on the element name */
+test {
+    margin-top: 20px;
+    background-color: gray;
+    text-align: center;
+}
+
+text {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+}
