@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+
+<wml>
+    <!-- this card shows the selection screen -->
+	<card title="Select an Option">
+		<p align="center">Select one of the following</p>
+
+        <!-- name attribute will contain the name of the variable -->
+		<select name="opt">
+			<option value="one">One</option>
+			<option value="two">Two</option> 
+		</select>
+
+        <!-- using do and go to navigate to the next screen -->
+		<do type="access" label="Next">
+			<go href="#done">
+		</do>
+	</card>
+
+    <!-- this card shows the completion screen -->
+	<card id="done" title="Selection completed">
+        <!-- it displays the value of the variable acquired from selection above -->
+		<p>You selected: $(opt)</p>
+	</card>
+</wml>

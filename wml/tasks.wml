@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+
+<wml>
+    <card id="card1" title="First Card">
+        <p>This is the first card</p>
+        <!-- go task -->
+        <p>
+            <anchor>
+                Go to second card: <go href="#card2" />
+            </anchor>
+        </p>
+        <!-- prev task -->
+        <p>
+            <anchor>
+                Go to previous card: <prev />
+            </anchor>
+        </p>
+        <!-- refresh task -->
+        <!-- refresh task is used to perform variable assignments -->
+        <p>
+            <anchor>
+                Refresh this page: <go href="tasks.wml" />
+                <refresh>
+                    <setvar name="x" value="10" />
+                </refresh>
+            </anchor>
+        </p>
+        <!-- noop task -->
+        <!-- it does no operation -->
+        <p>
+            <do type="prev" label="Back">
+                <noop/>
+            </do>
+        </p>
+    </card>
+    
+    <card id="card2" title="Second Card">
+        <p>This is the second card</p>
+        <p>
+            <anchor>
+                Go to previous card: <prev />
+            </anchor>
+        </p>
+    </card>
+</wml>

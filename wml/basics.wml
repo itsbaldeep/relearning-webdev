@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!-- WML is applied as a DTD in XML file -->
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+
+<!-- root element is always wml, it contains a deck of card(s) -->
+<!-- wml file can contain multiple cards -->
+<wml>
+    <!-- every card should have a title, id can be used for navigation purposes -->
+	<card id="main" title="My First Card">
+
+        <!-- paragraph tag -->
+		<p align="center">Hello world!</p>
+
+        <!-- linebreak tag -->
+        <br/>
+
+        <!-- table tag -->
+        <table>
+            <tr>
+                <td>One</td>
+                <td>Two</td>
+                <td>Three</td>
+            </tr>
+            <tr>
+                <td>Four</td>
+                <td>Five</td>
+                <td>Six</td>
+            </tr>
+        </table>
+
+        <!-- preformat tag -->
+        <pre>Hello</pre>
+
+        <!-- textual tags -->
+        <p>
+            Lorem <b>ipsum</b> dolor sit <i>amet</i> consectetur adipisicing elit. <u>Rem</u> corporis iure voluptatem 
+            quisquam, <strong>numquam</strong> earum cumque cum eius molestias aspernatur.
+        </p>
+
+        <!-- image tag -->
+        <img src="sample.jpg" alt="Image not found" />
+
+        <!-- anchor tags -->
+        <!-- using a tag -->
+        <a href="#card2">Go to Card 2</a>
+        <!-- using anchor and go -->
+        <anchor>
+            <go href="#card2" />
+        </anchor>
+
+        <!-- select tags-->
+        <select name="option" multiple="true">
+            <optgroup title="Group 1">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+            </optgroup>
+            <optgroup title="Group 2">
+                <option value="black">Black</option>
+                <option value="pink">Pink</option>
+            </optgroup>
+        </select>
+
+        <!-- input tag -->
+        <p>Name: <input name="name" size="12" /></p>
+
+        <!-- setvar tag -->
+        <setvar name="x" value="10" />
+
+        <!-- fieldset tag -->
+        <fieldset title="Personal Information">
+            Name: <input name="name" size="12" />
+            Age: <input name="age" size="12" format="*N"/>
+        </fieldset>
+	</card>
+
+    <!-- here is another card -->
+    <card id="card2" title="This is another card">
+        <p>Hello World!</p>
+        <anchor>Go back: <prev /></anchor>
+    </card>
+</wml>

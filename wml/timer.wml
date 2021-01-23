@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+
+<wml>
+    <!-- ontimer attribute is used to define the trigger action of the event -->
+	<card id="card1" title="First Card" ontimer="#card2">
+        <!-- value defines the amount of seconds until the event gets triggered -->
+		<timer value="10" />
+		<p>This is the first card.</p>
+	</card>
+
+    <!-- after 10 seconds, user will hit card2 -->
+    <!-- and after 10 more seconds, user will hit card1 again and it loops -->
+	<card id="card2" title="Second Card" ontimer="#card1">
+		<timer value="10" />
+		<p>This is the second card.</p>
+	</card>
+</wml>
