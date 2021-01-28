@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="ISO-8859-1" />
+        <title>Demo</title>
+    </head>
+    <body>
+    	<!-- This link will call /home action -->
+    	<a href="home">Go to home</a>
+    
+    	<!-- This following form will call the /add action with two parameters as a POST request -->
+        <h3>Add</h3>
+        <form action="add" method="POST">
+            <div class="form-group">
+                <label>First Number</label>
+                <input type="number" name="firstNum" />
+            </div>
+            <div class="form-group">
+                <label>Second Number</label>
+                <input type="number" name="secondNum" />
+            </div>
+            <input type="submit" />
+        </form>
+    
+        <!-- This following form will call the /squareOfSum action with two parameters as a POST request -->
+        <h3>Sum of Squares</h3>
+        <form action="squareOfSum" method="POST">
+            <div class="form-group">
+                <label>First Number</label>
+                <input type="number" name="firstNum" />
+            </div>
+            <div class="form-group">
+                <label>Second Number</label>
+                <input type="number" name="secondNum" />
+            </div>
+            <input type="submit" />
+        </form>
+    </body>
+</html>

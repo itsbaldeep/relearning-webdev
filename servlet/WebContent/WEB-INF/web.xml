@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+	<!-- It requires servlet and servlet-mapping element to route a url to a servlet class -->
+
+	<!-- /add route to AddServlet class -->
+	<servlet>
+		<servlet-name>add</servlet-name>
+		<servlet-class>com.demoapp.AddServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>add</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+	<!-- /square route to SquareServlet class -->
+	<servlet>
+		<servlet-name>square</servlet-name>
+		<servlet-class>com.demoapp.SquareServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>square</servlet-name>
+		<url-pattern>/square</url-pattern>
+	</servlet-mapping>
+
+	<!-- /squareOfSum route to SquareOfSumServlet class -->
+	<servlet>
+		<servlet-name>squareOfSum</servlet-name>
+		<servlet-class>com.demoapp.SquareOfSumServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>squareOfSum</servlet-name>
+		<url-pattern>/squareOfSum</url-pattern>
+	</servlet-mapping>
+	
+	<!-- /home route to MyServlet class -->
+	<servlet>
+		<servlet-name>home</servlet-name>
+		<servlet-class>com.demoapp.MyServlet</servlet-class>
+		<!-- To make local parameter to a servlet -->
+		<init-param>
+			<param-name>example</param-name>
+			<param-value>This is a local parameter</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>home</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+
+	<!-- To make global parameters -->
+	<context-param>
+		<param-name>example</param-name>
+		<param-value>Hello</param-value>
+	</context-param>
+
+</web-app>
